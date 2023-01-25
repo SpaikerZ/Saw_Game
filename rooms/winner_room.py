@@ -1,0 +1,3 @@
+
+def enter():
+	print('hello')

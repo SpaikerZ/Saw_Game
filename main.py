@@ -1,8 +1,19 @@
-from gtts import gTTS
-import os
+from rooms import winner_room
+from rooms import russian_roulette
+from rooms import friend_room
+from rooms import start_room
 
-mytext = 'hi, this is an example of converting text to audio'
-audio = gTTS(text=mytext, lang='en', slow=False)
 
-audio.save('audio/example.mp3')
-os.system('open audio/example.mp3')
+class Engine():
+	pass
+
+class Map():
+	pass
+
+class Scene():
+	pass
+
+class Death():
+	pass
+
+winner_room.enter()
