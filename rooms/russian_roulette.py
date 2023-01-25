@@ -1,3 +1,3 @@
 
 def enter():
-	pass
+	print('russian roulette is work')

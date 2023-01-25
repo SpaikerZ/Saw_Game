@@ -1,3 +1,3 @@
 
 def enter():
-	pass
+	print('friend room is work')
