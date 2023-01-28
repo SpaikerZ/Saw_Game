@@ -1,5 +1,10 @@
-class winner(object):
+from textwrap import dedent
 
+
+class winner(object):
+	# this variable means, if player succesfuly end the room, he can go next
 	succes = True
 	def enter():
-		print('winner room is work')
+		print(dedent("""
+			Winner room
+		"""))		
