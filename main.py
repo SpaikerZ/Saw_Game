@@ -7,7 +7,7 @@ from sys import exit
 
 class Scene(object):
 	def enter():
-		print('If u see it, this subclass hasn\t enter function')
+		print('If u see it, this subclass hasn\'t enter function')
 		exit(0)
 
 # array which contain rooms and posibility to see rooms
@@ -41,9 +41,10 @@ class Engine(Map):
 				
 			if current_scene.succes:
 				self.map.scenes.remove(current_scene)
-			else:
+			elif current_scene.succes == False:
 				Death()
-		
+			else:
+				print('#*#' * 50)
 	
 # here we need screamer
 class Death(Scene):
