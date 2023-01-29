@@ -13,21 +13,21 @@ class friend(object):
 		time.sleep(2)
 		print('. . .')
 		time.sleep(1)
-		#playsound('./audio/ru/Scream.mp3')
+		playsound('./audio/ru/Scream.mp3')
 		print('Spanch Bob?')
 		time.sleep(1)
 		print('He need a help')
-		#playsound('./audio/ru/друг_приветствие.wav')
+		playsound('./audio/ru/друг_приветствие.wav')
 		time.sleep(1)
 		print('Whata fu** is going on')
-		#playsound('./audio/ru/Scream.mp3')
+		playsound('./audio/ru/Scream.mp3')
 		print(dedent("""
 				Перед тобой лежат буквы
 				Собери из них слово
 				У тебя 15 секунд 
 				Если ты не соберешь слово правильно с первого раз твоего друга разорвет на части
 		"""))
-		#playsound('./audio/ru/друг.wav')
+		playsound('./audio/ru/друг.wav')
 		
 		print('Время пошло ...')
 		time_before = time.time()
@@ -54,7 +54,7 @@ class friend(object):
 		
 		if 'Scream' in strip_word:
 			time_after = time.time()
-			delta_time = int(time_after - timebefore)
+			delta_time = int(time_after - time_before)
 			if delta_time < 15:
 				print('...')
 				time.sleep(1)
