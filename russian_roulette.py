@@ -2,6 +2,7 @@ from textwrap import dedent
 import time
 from playsound import playsound
 import threading
+from random import randint
 
 class roulette(object):
 
@@ -20,7 +21,11 @@ class roulette(object):
 		"""))
 		
 		array_slot = ['0', '1', '2', '3', '4', '5']
-		
+		patron = randint(0, int(len(array_slot)-1))
+		#print('patron is:', patron)
+		array_slot[patron] = 'patron'
+		current_slot = randint(0, int(len(array_slot)-1))
+		#print('current slot is:', current_slot)
 		
 		playsound('./audio/ru/рулетка.wav')
 		
@@ -30,20 +35,29 @@ class roulette(object):
 		saw_play_sound.start()
 		
 		print('Вы заряжаете револьвер')
-		time.sleep(1)
+		time.sleep(2)
+		print('...')
+		time.sleep(2)
+		print('Крутите барабан')
+		time.sleep(2)
+		print('Прикладываете к холодному виску')
+		time.sleep(2)
+		if array_slot[current_slot] == 'patron':
+			print('HAHAHAHAHA')
+			print('You die')
+			exit(1)
+		print('Ничего...')
+		time.sleep(4)
+		print('Spanch bob заряжает револьвер ')
+		time.sleep(3)
+		print('крутит барабан')
+		time.sleep(5)
 		print('...')
 		time.sleep(1)
-		print('Крутите барабан')
-		time.sleep(1)
-		print('Прикладываете к холодному виску')
-		time.sleep(1)
+		print('губке бедному не повезло')
+		time.sleep(3)
+		print('...')
+		print('Вы идете в следующую комнату ')
 		
-		
-		
-		
-		
-		# crate revolver
-			# array with slot
-			# array with 
 		
 		
