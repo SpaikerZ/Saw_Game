@@ -6,5 +6,7 @@ class winner(object):
 	succes = True
 	def enter():
 		print(dedent("""
-			Winner room
+			You are winner 
+			Congratulations!!!!
 		"""))		
+		exit(o)
