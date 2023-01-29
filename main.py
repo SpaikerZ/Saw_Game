@@ -13,7 +13,8 @@ class Scene(object):
 # array which contain rooms and posibility to see rooms
 class Map(object):
 		
-	scenes = [start, friend, roulette, winner]
+	scenes = [#start, 
+			  friend, roulette, winner]
 
 	def show_scenes():
 		join_scenes = ' - '.join(scenes)
